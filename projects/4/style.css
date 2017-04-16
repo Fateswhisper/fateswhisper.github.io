@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    background: #1f2531;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    background: #b86365;
+    padding: 59px 24px;
+    border-radius: 0 0 27px 27px;
+    text-align: center;
+    box-shadow: 0px 2px 10px 0px rgb(202, 145, 146);
+}
+.logo h1 {
+    font: 42px Georgia, sans-serif;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+.logo p {
+    font: 13px Georgia, sans-serif;
+    color: #ffffff;
+}
+.navigation {
+    /* float: right; */
+    padding-top: 53px;
+    padding-bottom: 55px;
+    border-bottom: 1px #666666 solid;
+    /* width: 100%; */
+    text-align: right;
+}
+.navigation li {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px #666666 solid;
+}
+.navigation li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+.navigation a {
+    font: 14px Georgia, sans-serif;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navigation a:hover {
+    color: #ffffff;
+    border-top: 4px #b86365 solid;
+    padding-top: 51px;
+}
+/* Главный блок с текстом и смартфонами */
+.featured {
+    /*margin-top: 100px; */
+    display: inline-block;
+}
+.content-text {
+    display: inline-block;
+    width: 60%;
+    padding-top: 120px;
+    /* float: left; */
+}
+.content-text h2 {
+    font: 56px Georgia, sans-serif;
+    color: #ffffff;
+}
+.content-text p {
+    font: 16px Georgia, sans-serif;
+    color: #ffffff;
+}
+.content-text a {
+    color: #b86365;
+}
+.image {
+    float: right;
+    position: relative;
+    top: -40px;
+    /* width: 40%; */
+}
+.smartphone {
+    position: absolute;
+    bottom: -10px;
+    left: -70px;
+    box-shadow: 0rem 1rem 2.625rem 0.375rem rgba(0,0,0,0.8);
+    border-radius: 30px;
+}
+.touchpad {
+    box-shadow: 0rem 1rem 2.625rem 0.375rem rgba(0,0,0,0.8);
+    border-radius: 20px;
+}
+.phone {
+    display: inline-block;
+    background: #10131b;
+    border-radius: 11px;
+    font: 22px Georgia, sans-serif;
+    color: #ffffff;
+    padding: 16px 12px;
+    margin-top: 28px;
+}
+.phone img {
+    margin-right: 26px;
+    float: left;
+}
+.phone p {
+    float: left;
+    padding-top: 5px;
+    text-align: center;
+}
+/* Второй блок с контентом */
+.content {
+    display: inline-block;
+    background: #ffffff;
+    margin: 20px 0 59px 0;
+    padding: 40px 0;
+    border-radius: 28px;
+    box-shadow: 0px 2px 10px 0px rgba(255, 253, 253, 0.9);
+}
+.features {
+    float: left;
+    width: 50%;
+}
+.feature {
+    width: 181px;
+    height: 181px;
+    background: #b86365;
+    border-radius: 50%;
+    border: 18px #e2e2e2 solid;
+    float: left;
+    margin: 10px;
+}
+.features h3 {
+    font: 16px Georgia, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 23px;
+}
+.features p {
+    font: 13px Georgia, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+}
+.benefits {
+    float: left;
+    width: 50%;
+    padding-top: 5px;
+}
+.benefits i {
+    font: 14px Georgia, sans-serif;
+    font-style: italic;
+    color: #666666;
+    float: left;
+    margin-top: 10px;
+}
+.benefits p {
+    font: 12px Georgia, sans-serif;
+    color: #989898;
+    float: left;
+}
+.px {
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.slider {
+    width: 100%;
+    float: left;
+    border-top: 1px #dadada solid;
+    border-bottom: 1px #dadada solid;
+    padding: 20px 0 26px 0;
+    margin-top: 20px;
+}
+.subscribe {
+    float: left;
+    text-align: center;
+    width: 300px;
+}
+.left_arrow {
+    float: left;
+    margin-left: 30px;
+    margin-right: 16px;
+}
+.right_arrow {
+    float: right;
+    margin-left: 16px;
+    margin-right: 30px;
+}
+.subscribe h3 {
+    font: 36px Georgia, sans-serif;
+    color: #666666;
+    font-style: italic;
+    font-weight: bold;
+}
+.subscribe p {
+    font: 16px Georgia, sans-serif;
+    color: #989898;
+}
+.input {
+    float: right;
+    margin-top: 15px;
+}
+input[type="text"] {
+    padding: 9px 8px;
+    font: 13px Georgia, sans-serif;
+    color: #989898;
+    border: 1px #d1d1d1 solid;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #f6f6f6, #dadada);
+    margin-right: 17px;
+    width: 279px;
+    outline: none;
+}
+input[type="submit"] {
+    padding: 9px 22px;
+    font: 13px Georgia, sans-serif;
+    color: #b86365;
+    font-weight: bold;
+    border: 1px #d1d1d1 solid;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #f6f6f6, #dadada);
+    outline: none;
+}
+input[type="submit"]:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    border: 1px solid #b9b6b6;
+    border-top: 1px solid #a09c9c;
+}
+/* Футер */
+.footer {
+    display: inline-block;
+    border-bottom: 1px #2f384b solid;
+    padding-bottom: 20px;
+}
+.footer h5 {
+    color: #ffffff;
+    font: 11px Georgia, sans-serif;
+    padding-bottom: 20px;
+}
+.footer p {
+    color: #989898;
+    font: 12px Georgia, sans-serif;
+    margin: 15px 0;
+}
+.benefit {
+    float: left;
+    width: 50%;
+    padding-top: 14px;
+    padding-bottom: 7px;
+}
+.blog {
+    width: 22%;
+    float: left;
+    padding-right: 35px;
+}
+.blog a {
+    color: #989898;
+    font: 13px Georgia, sans-serif;
+    font-weight: bold;
+}
+.blog i {
+    color: #757575;
+    font: 11px Georgia, sans-serif;
+}
+
+a.readmore {
+    font: 12px Georgia, sans-serif;
+    color: #b86365;
+    float: right;
+}
+.links {
+    width: 22%;
+    float: left;
+    padding-right: 35px;
+}
+.links p,
+.socialise p {
+    border-bottom: 1px #2f384b solid;
+    padding-bottom: 5px;
+}
+.contact {
+    width: 22%;
+    float: left;
+    padding-right: 35px;
+}
+.socialise {
+    width: 22%;
+    float: right;
+}
+.copyright {
+    display: inline-block;
+    width: 100%;
+}
+.copy {
+    float: left;
+    font: 12px Georgia, sans-serif;
+    color: #919191;
+    padding: 10px 0;
+}
+.by {
+    float: right;
+    font: 12px Georgia, sans-serif;
+    color: #919191;
+    padding: 10px 0;
+}

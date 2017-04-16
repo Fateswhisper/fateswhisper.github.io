@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Первые шаги вёрстки, работа №7</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link href="js/jquery.fancybox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/date-time.js"></script>
+    <script type="text/javascript" src="js/loadmore.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+        <div class="loader2"></div>
+        <div class="loader3"></div>
+        <div class="logo">L<b>oa</b>d<b>in</b>g <b>. . .</b></div>
+    </div>
+    <!-- Left menu navigation -->
+    <div class="navigation" id="menu">
+        <ul>
+            <li>
+                <a href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            </li>
+            <li>
+                <a href="#knowme"><i class="fa fa-user-o" aria-hidden="true"></i>Know Me</a>
+            </li>
+            <li>
+                <a href="#myskills"><i class="fa fa-laptop" aria-hidden="true"></i>My Skills</a>
+            </li>
+            <li>
+                <a href="#myresume"><i class="fa fa-graduation-cap" aria-hidden="true"></i>My Resume</a>
+            </li>
+            <li>
+                <a href="#myprojects"><i class="fa fa-briefcase" aria-hidden="true"></i>My Projects</a>
+            </li>
+            <li>
+                <a href="#blog"><i class="fa fa-bullhorn" aria-hidden="true"></i>Blog</a>
+            </li>
+            <li>
+                <a href="#contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Right date and social link -->
+    <div class="sidebar">
+        <div class="date-and-time">
+            <div class="calendar">
+                <div class="month" id="month"></div>
+                <div class="day" id="day"></div>
+                <div class="year" id="year"></div>
+            </div>
+            <div class="time" id="time"></div>
+            <script type="text/javascript">
+                showDateTime();
+            </script>
+        </div>
+        <div class="social-link">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- Home content -->
+        <div class="home-page" id="home">
+            <div class="home-item">
+                <h1>Edo Nathan</h1>
+                <em>Web developer and designer</em>
+                <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure
+                    at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has,
+                    ei quodsi tacimates sapientem sed, pri zril ubique ut.</p>
+                <div class="button">
+                    <a href="#">HIRE ME</a>
+                    <a href="#">DOWNLOAD MY CV</a>
+                </div>
+            </div>
+        </div>
+        <!-- Know Me -->
+        <div class="knowme-page pages" id="knowme">
+            <h2><span>Know Me</span></h2>
+            <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at.
+                Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset.</p>
+            <div class="knowme-left">
+                <p><span>Name</span>Edo Mathan</p>
+                <p><span>Age</span>23 years</p>
+                <p><span>Citizenship</span>Moroccan</p>
+                <p><span>Job</span>Freelancer</p>
+                <p><span>Residence</span>Casablanca</p>
+                <p><span>Hometown</span>Tetouan</p>
+                <p><span>Address</span>59, Rue 1, Jamila 2, CD</p>
+                <p><span>Phone</span>(+212) 06 33504106</p>
+                <p><span>Fax</span>(+212) 05 22346476</p>
+                <p><span>Email</span>lynxtheme@gmail.com</p>
+            </div>
+            <div class="knowme-right">
+                <img src="img/pers-pic.jpg" alt="pers-pic">
+            </div>
+            <div class="knowme-quote">
+                <h3>FAVORATE QUOTE</h3>
+                <p><i class="fa fa-quote-left" aria-hidden="true"></i> If you win silver, sooner or later people will forget
+                     you. But if you win gold, you will become an example. And examples are given not forgotten.
+                    <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                <em>Aamir Khan, Dangal</em>
+            </div>
+        </div>
+        <!-- My Skills -->
+        <div class="myskills-page pages" id="myskills">
+            <h2><span>Skills</span></h2>
+            <div class="myskills-items">
+                <h3>PROGRAMMING LANGUAGES THAT I WORK WITH</h3>
+                <div class="myskills-left">
+                    <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut.
+                        Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique
+                        ut.
+                    </p>
+                    <p>Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his dico vituperata
+                        ut. Pro ei phaedrum maluisset.</p>
+                </div>
+                <div class="myskills-right">
+                    <p>HTML5<span>100%</span></p>
+                    <div class="html5"></div>
+                    <p>CSS3<span>85%</span></p>
+                    <div class="CSS3"></div>
+                    <p>JQuery<span>90%</span></p>
+                    <div class="JQuery"></div>
+                    <p>PHP<span>80%</span></p>
+                    <div class="PHP"></div>
+                </div>
+            </div>
+            <div class="myskills-items">
+                <h3>SERVICES THAT I PROVIDE</h3>
+                <ul>
+                    <li>
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <h4>WEB DESIGN & UI</h4>
+                        Lorem ipsum dolor sit amet consectetur, adipiscing elit ubique.
+                    </li>
+                    <li>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <h4>WIREFRAMES</h4>
+                        Lorem ipsum dolor sit amet consectetur, adipiscing elit ubique.
+                    </li>
+                    <li>
+                        <i class="fa fa-diamond" aria-hidden="true"></i>
+                        <h4>VISUAL DESIGN</h4>
+                        Lorem ipsum dolor sit amet consectetur, adipiscing elit ubique.
+                    </li>
+                    <li>
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <h4>MOBILE APP DESIGN</h4>
+                        Lorem ipsum dolor sit amet consectetur, adipiscing elit ubique.
+                    </li>
+                </ul>
+            </div>
+            <div class="myskills-items">
+                <h3>NUMBERS THAT I'M PROUD OF</h3>
+                <ul>
+                    <li><span>139</span>Satisfied Client</li>
+                    <li><span>300</span>Realized Project</li>
+                    <li><span>234</span>Appereciations</li>
+                    <li><span>1257</span>Purchases</li>
+                </ul>
+            </div>
+            <div class="myskills-items">
+                <h3>LANGUAGES THAT I SPEAK</h3>
+                <div class="myskills-left">
+                    <p>ARABIC<span>100%</span></p>
+                    <div class="arabic"></div>
+                    <p>ENGLISH<span>85%</span></p>
+                    <div class="english"></div>
+                    <p>FRENCH<span>80%</span></p>
+                    <div class="french"></div>
+                    <p>SPANISH<span>70%</span></p>
+                    <div class="spanish"></div>
+                </div>
+                <div class="myskills-right">
+                    <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut.
+                        Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique
+                        ut.
+                    </p>
+                    <p>Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his dico vituperata
+                        ut. Pro ei phaedrum maluisset.</p>
+                </div>
+            </div>
+        </div>
+        <!-- My Resume -->
+        <div class="myresume-page pages" id="myresume">
+            <h2><span>Resume</span></h2>
+            <h3>EXPERIENCES</h3>
+            <div class="myresume-items">
+                <ul>
+                    <li>
+                        <h4>MID-LEVEL DESIGNER AT ENVATO MARKET</h4>
+                        <span>June 2016 - Up to now</span>
+                        <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies
+                            purus, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est
+                            congue mollis. Phasellus congue lacus eget neque.</p>
+                    </li>
+                    <li>
+                        <h4>WEB DESIGNER & DEVELOPER AT GOOGLE</h4>
+                        <span>February 2015 - Mai 2016</span>
+                        <p>Purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate
+                            arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue
+                            lacus eget neque. Phasellus ornare.</p>
+                    </li>
+                    <li>
+                        <h4>FRONT-END DESIGNER AT PIXEL TOUCH</h4>
+                        <span>Mai 2013 - January 2015</span>
+                        <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies
+                            purus, sed posuere libero dui id orci. Etiam sit amet lectus quis est congue mollis. Phasellus
+                            congue lacus eget neque.</p>
+                    </li>
+                    <li>
+                        <h4>ART & CREATIVE DIRECTOR AT EBISOFT</h4>
+                        <span>June 2012 - April 2013</span>
+                        <p>Sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu,
+                            vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue
+                            lacus eget neque.</p>
+                    </li>
+                </ul>
+            </div>
+            <h3>STUDIES</h3>
+            <div class="myresume-items">
+                <ul>
+                    <li>
+                        <h4>CAMBRIDGE UNIVERSIRTY</h4>
+                        <span>Spetember 2009 - June 2012</span>
+                        <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies
+                            purus, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est
+                            congue mollis. Phasellus congue lacus eget neque.</p>
+                    </li>
+                    <li>
+                        <h4>ISTA BEN MSIK TRAINING CENTER</h4>
+                        <span>September 2007 - June 2009</span>
+                        <p>Purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate
+                            arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue
+                            lacus eget neque. Phasellus ornare.</p>
+                    </li>
+                    <li>
+                        <h4>MLY ISMAIL HIGH SCHOOL</h4>
+                        <span>September 2003 - June 2006</span>
+                        <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies
+                            purus, sed posuere libero dui id orci. Etiam sit amet lectus quis est congue mollis. Phasellus
+                            congue lacus eget neque.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- My Projects -->
+        <div class="myprojects-page pages" id="myprojects">
+            <h2><span>Projects</span></h2>
+            <ul>
+                <li class="mr25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/1_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/1_preview.jpg" alt="1_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Combine Harvester Pouring Grain into Trailer Towed</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                <li class="ml25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/2_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/2_preview.jpg" alt="2_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Outdoor Garden Office Working Desk With Laptop</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                <li class="mr25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/3_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/3_preview.jpg" alt="3_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Black And White Locked Fence Close Up</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                <li class="ml25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/4_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/4_preview.jpg" alt="4_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Prague Old Town Square Houses and Panorama</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                <li class="mr25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/5_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/5_preview.jpg" alt="5_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Charles Bridge and Vltava River</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                <li class="ml25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/6_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/6_preview.jpg" alt="6_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Astronomical Clock in the Old Town Square</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                <li class="mr25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/8_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/8_preview.jpg" alt="8_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Sweet Yummy Chocolate Cake</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                <!--
+                <li class="ml25 project">
+                    <a data-fancybox="gallery" href="img/projects_images/8_full.jpg">
+                        <i class="fa fa-search-plus" aria-hidden="true" title="Click to enlarge image"></i>
+                    </a>
+                    <img src="img/projects_images/8_preview.jpg" alt="8_preview.jpg">
+                    <div class="myprojects-item-info">
+                        <h4><a href="#">Baking Christmas Lovely Hearts Sweets</a></h4>
+                        <p>Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has.</p>
+                    </div>
+                </li>
+                -->
+            </ul>
+            <div class="blog-button">
+                <a href="#" id="loadMore"><i class="fa fa-refresh" aria-hidden="true"></i>Load more</a>
+            </div>
+        </div>
+        <!-- Blog -->
+        <div class="blog-page pages" id="blog">
+            <h2><span>Blog</span></h2>
+            <div class="blog">
+                <img src="img/blog1.jpg" alt="blog1.jpg">
+                <h4><a data-fancybox data-src="#hidden-content-1" href="javascript:;" class="btn">Black And White Locked Fence Close Up</a></h4>
+                <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus,
+                    elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis.
+                    Phasellus congue lacus eget neque.</p>
+                <em>By Edo Nathan</em>
+            </div>
+            <div class="blog" style="display: none;" id="hidden-content-1">
+                <img src="img/blog1.jpg" alt="blog1.jpg">
+                <h4><a href="#">Black And White Locked Fence Close Up</a></h4>
+                <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus,
+                    elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis.
+                    Phasellus congue lacus eget neque.</p>
+                <em>By Edo Nathan</em>
+            </div>
+            <div class="blog">
+                <img src="img/blog2.jpg" alt="blog2.jpg">
+                <h4><a data-fancybox data-src="#hidden-content-2" href="javascript:;" class="btn">Baking Christmas Lovely Hearts Sweets</a></h4>
+                <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus,
+                    elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis.
+                    Phasellus congue lacus eget neque.</p>
+                <em>By Edo Nathan</em>
+            </div>
+            <div class="blog" style="display: none;" id="hidden-content-2">
+                <img src="img/blog2.jpg" alt="blog2.jpg">
+                <h4><a href="#">Baking Christmas Lovely Hearts Sweets</a></h4>
+                <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus,
+                    elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis.
+                    Phasellus congue lacus eget neque.</p>
+                <em>By Edo Nathan</em>
+            </div>
+            <div class="blog">
+                <img src="img/blog3.jpg" alt="blog3.jpg">
+                <h4><a data-fancybox data-src="#hidden-content-3" href="javascript:;" class="btn">Astronomical Clock in the Old Town Square</a></h4>
+                <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus,
+                    elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis.
+                    Phasellus congue lacus eget neque.</p>
+                <em>By Edo Nathan</em>
+            </div>
+            <div class="blog" style="display: none;" id="hidden-content-3">
+                <img src="img/blog3.jpg" alt="blog3.jpg">
+                <h4><a href="#">Astronomical Clock in the Old Town Square</a></h4>
+                <p>Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus,
+                    elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis.
+                    Phasellus congue lacus eget neque.</p>
+                <em>By Edo Nathan</em>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="contact-page pages" id="contact">
+            <h2><span>Contact</span></h2>
+            <div class="contact-items">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <strong>CALL OR SEND ME A FAX</strong>
+                <p>(+212) 06 33504106</p>
+            </div>
+            <div class="contact-items">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <strong>SEND ME AN EMAIL</strong>
+                <p>nafida@gmail.com</p>
+            </div>
+            <div class="contact-items">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <strong>PAY ME A VISIT</strong>
+                <p>59, Rue 1, Jamila 2, CD</p>
+            </div>
+            <div class="contact-form">
+                <h4>LEAVE ME A MESSAGE</h4>
+                <p>You can ask me about anything here, just type your name and e-mail and I'll answer you as soon as possible.</p>
+                <form class="contact_form" action="contact-form.php" method="post">
+                    <div class="form-items">
+                        <input type="text" name="name" placeholder="Your fullname here ..." required>
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="form-items">
+                        <input type="email" name="email" placeholder="Your e-mail here ..." required>
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <div class="form-items">
+                        <textarea name="message" rows="4" placeholder="Your message here ..." required></textarea>
+                        <i class="fa fa-comment"></i>
+                    </div>
+                    <!-- Защита от спама — невидимое поле с именем name=bezspama. У него стоит стиль display:none — это значит поле невидимо людям, но боты его будут заполнять на автомате. -->
+                    <input name="bezspama" type="text" style="display:none" value="" />
+                    <input type="submit" value="GET IN TOUCH">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© NAFIDA copyright 2017.</p>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

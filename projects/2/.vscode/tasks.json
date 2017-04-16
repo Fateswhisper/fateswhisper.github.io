@@ -1,0 +1,17 @@
+{
+	"version": "0.1.0",
+	
+	"command": "chrome",
+	
+	"windows": {
+	
+		"command": "///Users/User/AppData/Local/Chromium/Application/chrome.exe"
+		
+	},
+	
+	"args": [
+	
+		"${file}"
+		
+	] 
+}
