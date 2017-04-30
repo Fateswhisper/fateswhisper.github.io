@@ -157,7 +157,7 @@ body {
     background: linear-gradient(180deg, #161c25 0%, #0b0e15 100%);
 }
 .content-2-item h4 {
-    padding: 5px 10px 5px 10px;
+    padding: 10px 10px;
     color: #ffffff;
     font-size: 18px;
 }
@@ -206,7 +206,7 @@ body {
     padding: 16px 20px 16px 20px;
     overflow: hidden;
 }
-.content-3-title {
+.block-title {
     border-bottom: 1px solid #273344;
     border-radius: 3px;
     background: linear-gradient(180deg, #161c25 0%, #0b0e15 100%);
@@ -312,8 +312,10 @@ body {
     float: right;
 }
 .servcont-1-item img {
-    margin: 5px auto;
+    margin: 0 auto;
     width: initial;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 .servcont-2-item {
     float: left;
@@ -358,4 +360,97 @@ body {
     color: #21b3c6;
     padding-bottom: 8px;
     display: block;
+}
+/* Events */
+.events {
+    margin-top: -80px;
+    overflow: hidden;
+}
+.evcont-1 {
+    overflow: hidden;
+    border: 1px solid #273344;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #161c25 0%, #0b0e15 100%);
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    float: left;
+}
+.evcont-items > a {
+    color: #ffffff;
+    background: #de1640;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    float: right;
+    margin-top: 10px;
+}
+.evcont-items {
+    padding: 0 20px;
+}
+.evcont-1-item {
+    float: left;
+    padding-top: 15px;
+}
+.evcont-2 {
+    margin-bottom: 10px;
+    overflow: hidden;
+    float: left;
+}
+.evcont-1-item img {
+    margin-bottom: 5px;
+}
+.evcont-1-item a {
+    color: #ff1d4f;
+    font-size: 24px;
+    float: right;
+}
+.evcont-2-item {
+    border: 1px solid #273344;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #161c25 0%, #0b0e15 100%);
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.evcont-2-item h4 {
+    padding: 10px 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.evcont-2-content {
+    padding: 10px 20px 16px 20px;
+    overflow: hidden;
+}
+.evcont-2-content p {
+    color: #21b3c6;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.evcont-2-content a {
+    color: #ffffff;
+    background: #de1640;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    float: right;
+}
+.evcont-2-content ul {
+    width: 50%;
+    float: left;
+    padding-right: 50px;
+    margin: 20px 0;
+}
+.evcont-2-content ul li {
+    border-bottom: 1px rgba(76, 104, 141, 0.5) dashed;
+    line-height: 21px;
+}
+.evcont-2-content span {
+    padding-bottom: 20px;
+    display: block;
+}
+.w49 {
+    width: 49%;
+    float: left;
+}
+.mr2 {
+    margin-right: 2%;
 }
