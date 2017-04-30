@@ -454,3 +454,11 @@ body {
 .mr2 {
     margin-right: 2%;
 }
+.contact-red {
+    color: #ff1e50 !important;
+}
+.contact-red span {
+    display: inline-block;
+    width: 100px;
+    padding-bottom: 10px;
+}
