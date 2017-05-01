@@ -462,3 +462,109 @@ body {
     width: 100px;
     padding-bottom: 10px;
 }
+/* Contacts */
+.contacts {
+    margin-top: -80px;
+}
+.contcont-1 {
+    overflow: hidden;
+    border: 1px solid #273344;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #161c25 0%, #0b0e15 100%);
+    margin-bottom: 10px;
+}
+.contcont-1-item h3 {
+    padding: 10px 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.contcont-1-item span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #21b3c6;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: block;
+}
+.contcont-1-item {
+    float: left;
+    padding: 10px 20px 16px 20px;
+}
+.contcont-1-item ul li {
+    border-bottom: 1px rgba(76, 104, 141, 0.5) dashed;
+    line-height: 21px;
+}
+.contcont-1-item a {
+    color: #141a23;
+    background: linear-gradient(180deg, #fcfcfc 0%, #4c546f 100%);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    float: right;
+}
+.contcont-2 {
+    overflow: hidden;
+}
+.contcont-2-content {
+    padding: 16px 15px 16px 15px;
+}
+.contcont-2-item {
+    float: left;
+    overflow: hidden;
+    border: 1px solid #273344;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #161c25 0%, #0b0e15 100%);
+    margin-bottom: 10px;
+}
+.contact-info p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #21b3c6;
+}
+.contact-info span {
+    width: 100px;
+    display: inline-block;
+}
+.contact-info p:nth-child(1),
+.contact-info p:nth-child(4) {
+    margin-top: 30px;
+}
+.contcont-2-item.w66 .block-title {
+    color: #ffffff;
+}
+.contcont-2-item form {
+    padding: 16px 15px 16px 15px;
+}
+.contcont-2-item input,
+.contcont-2-item textarea,
+.contcont-2-item select {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #0e1118;
+    border: solid 1px #1a212d;
+    padding: 3px;
+    color: #616a81;
+    resize: none
+}
+::-webkit-input-placeholder {
+    color: #616a81;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type="submit"] {
+    color: #141a23;
+    background: linear-gradient(180deg, #fcfcfc 0%, #4c546f 100%);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    float: right;
+    outline: none;
+    width: inherit;
+}
+.tCaptcha {
+    margin-bottom: 15px;
+}
+.tCaptcha img {
+    width: inherit;
+}
