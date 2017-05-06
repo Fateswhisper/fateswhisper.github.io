@@ -616,3 +616,38 @@ input[type="submit"] {
 .nav-menu-items .active {
     color: #ffffff;
 }
+
+/* Readmore content */
+.readcont h3 {
+    color: #ffffff;
+    font-size: 22px;
+    padding: 5px 10px;
+    display: block;
+    font-family: 'Source Sans Pro';
+}
+.readcont .readcont-item {
+    padding: 10px 20px 16px 20px;
+    overflow: hidden;
+}
+.readcont-item p {
+    margin-bottom: 15px;
+    line-height: 1.4em;
+}
+.readcont h2 {
+    color: #ffffff;
+    font-size: 48px;
+    padding: 5px 10px;
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+}
+.readcont span {
+    color: #21b3c6;
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: block;
+}
+.readcont img {
+    width: inherit;
+    float: left;
+    margin: 5px 10px;
+}
