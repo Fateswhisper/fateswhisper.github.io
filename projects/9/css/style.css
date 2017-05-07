@@ -104,6 +104,7 @@ h4 {
 }
 .main-content {
     margin-top: -80px;
+    overflow: hidden;
 }
 .content-1 {
     overflow: hidden;
@@ -126,7 +127,8 @@ h4 {
 }
 .content-1-item .fa-rss {
     font-size: 22px;
-    color: #21b3c6;;
+    color: #21b3c6;
+    margin-right: 5px;
 }
 .content-1-item h3 {
     color: #ffffff;
@@ -375,7 +377,7 @@ h4 {
     padding: 0 20px;
 }
 .evcont-1-item {
-    float: left;
+    overflow: hidden;
     margin-top: 15px;
 }
 .evcont-2 {
@@ -643,11 +645,25 @@ input[type="submit"] {
 .readcont span {
     color: #21b3c6;
     font-weight: bold;
-    padding-bottom: 20px;
-    display: block;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.readcont-item > .color-red > span {
+    color: #ff1e50;
 }
 .readcont img {
     width: inherit;
     float: left;
-    margin: 5px 10px;
+    margin: 0 10px 5px 10px;
+}
+button {
+    color: #141a23;
+    background: linear-gradient(180deg, #fcfcfc 0%, #4c546f 100%);
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
