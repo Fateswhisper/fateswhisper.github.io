@@ -188,7 +188,7 @@ h4 {
     padding-bottom: 5px;
     display: block;
 }
-.content-2-item a {
+.content-2-item > a {
     color: #ffffff;
     background: #de1640;
     border-radius: 15px;
@@ -198,7 +198,7 @@ h4 {
     float: right;
     transition: 0.5s;
 }
-.content-2-item a:hover {
+.content-2-item > a:hover {
     box-shadow: 1px 1px 36px 2px #de1640;
 }
 .content-2-item p {
@@ -694,4 +694,53 @@ input[type="submit"]:hover {
     border: 1px solid #273344;
     border-radius: 3px;
     background: #141922;
+}
+
+a.btn {
+    color: #616a81;
+    transition: 0.5s;
+    outline: none;
+}
+a.btn:hover {
+    color: #fff;
+}
+
+.carav h3 {
+    font-size: 24px;
+    font-family: 'Abel';
+    border-bottom: 1px solid #EEEEEE;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+.carav-items {
+    border-left: 1px solid #EEEEEE;
+    padding: 0 20px;
+}
+.carav-items li {
+    margin-bottom: 50px;
+}
+.carav-items h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    position: relative;
+    color: #000;
+    padding: 0;
+    text-transform: uppercase;
+}
+.carav-items h4::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: #0099cc;
+    position: absolute;
+    top: 4px;
+    left: -25px;
+}
+.carav-items span {
+    color: #999999;
+    border-bottom: 1px solid #0099cc;
+}
+.carav-items p {
+    margin-top: 20px;
 }
