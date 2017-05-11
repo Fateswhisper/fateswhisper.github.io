@@ -174,7 +174,7 @@ body {
 }
 .title-news {
     float: left;
-    margin: 12px 20px 12px 0;
+    margin: 10px 20px 10px 0;
 }
 .more-news {
     float: right;
@@ -309,7 +309,7 @@ body {
     border: 1px rgba(101, 139, 188, 0.43) solid;
     border-radius: 5px;
     background: linear-gradient(0deg, #e8f7fc 0%, #ffffff 100%);
-    padding: 14px;
+    padding: 13px;
     overflow: hidden;
 }
 .mainarea-text {
@@ -320,5 +320,141 @@ body {
     color: #697d95;
     font-size: 13px;
     margin-bottom: 29px;
+}
+
+.mainarea-title {
+    overflow: hidden;
+}
+.mainarea-title h5 {
+    color: #6ccee7;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 15px;
+}
+.mainarea-title span {
+    float: right;
+    color: #44c5e5;
+    font-size: 11px;
     font-weight: bold;
+    border-radius: 30px;
+    border: 1px #44c5e5 solid;
+    border-left: none;
+    border-bottom: none;
+    padding: 15px 10px;
+}
+
+.mainarea-image {
+    width: 35%;
+    float: left;
+    margin-right: 13px;
+}
+.mainareahot-image img {
+    padding: 1px 1px 0 1px;
+    border-radius: 5px 5px 0 0;
+}
+.mainarea-image p {
+    color: #172b46;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.mainarea-image p span {
+    color: #6ccee7;
+}
+.mainarea-image-content {
+    padding: 15px;
+    overflow: hidden;
+}
+.share-link {
+    padding-top: 15px;
+    border-top: 1px rgba(101, 139, 188, 0.43) solid;
+}
+.share-link p {
+    font-size: 11px;
+}
+.share-link li {
+    float: left;
+    margin-right: 5px;
+}
+.share-link ul {
+    margin: 0;
+}
+.share-link ul li {
+    margin-bottom: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    text-align: center;
+}
+.share-link ul li i {
+    vertical-align: middle;
+}
+.mainarea-image img {
+    border-radius: 5px;
+}
+
+.mainarea-text .read-more {
+    color: #ffffff;
+    background: linear-gradient(0deg, #2293b1 0%, #44c6e6 100%);
+}
+
+.topwatch-image img {
+    width: 40%;
+    float: left;
+}
+.topwatch-image-content {
+    padding: 0 13px;
+    overflow: hidden;
+}
+
+.topwatch-image-content p {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.topwatch-image-content .share-link {
+    border-top-style: dashed;
+}
+.topwatch-image {
+    padding: 10px;
+}
+
+.topwatch {
+    background: linear-gradient(0deg, #003375 0%, #3fb1d5 100%);
+}
+.topwatch .title-block {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 5px rgba(0, 0, 0, 0.52) solid;
+}
+.teams {
+    float: left;
+}
+.match .teams i {
+    margin-top: 0;
+    color: #55e198;
+}
+.time {
+    float: right;
+    color: #55e198;
+}
+.match .teams span {
+    color: #44c5e5;
+}
+.games {
+    overflow: hidden;
+    padding: 10px;
+    color: #71849c;
+    border-bottom: 2px rgba(0, 0, 0, 0.52) solid;
+}
+.games-content {
+    padding: 10px;
+    color: #71849c;
+}
+.match ul {
+    margin: 0;
+}
+.match ul li {
+    border-bottom: 2px rgba(0, 0, 0, 0.52) solid;
 }
