@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro|Julius+Sans+One|Bree+Serif|Changa|Lalezar|Roboto+Slab|Arvo|Abel|Courgette';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro|Julius+Sans+One|Bree+Serif|Changa|Lalezar|Roboto+Slab|Arvo|Abel|Oswald|Courgette';
 @font-face {
     font-family: 'hbmrs';
     src: url(../font/hbmr/hbmrs.ttf);
@@ -29,7 +29,7 @@ body {
 }
 .header {
     background: linear-gradient(0deg, #11192e 0%, #020308 100%);
-    border-bottom: 1px #152443 solid;
+    box-shadow: inset rgba(0,0,0,0.8) 0px 1px 8px, rgba(255,255,255,0.1) 0px 0px 0px 1px, rgba(255,255,255,0.1) 0px 1px 0px;
 }
 .sign-nav {
     color: #6ccee7;
@@ -55,6 +55,11 @@ body {
     border-radius: 5px;
     color: #ffffff;
 }
+.sign-menu input[type="submit"],
+.navigation-search input[type="submit"] {
+    background: linear-gradient(0deg, #b24620 0%, #d88853 100%);
+}
+
 
 /* Logo content */
 .logo {
@@ -68,6 +73,9 @@ body {
 }
 .logo-text h1 {
     font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px, rgba(0,0,0,0.6) 0px 1px 2px;
 }
 .logo-text span {
     font-weight: bold;
@@ -88,28 +96,42 @@ body {
 
 /* Navigation links */
 .navigation {
-    background: linear-gradient(0deg, #223a5e 0%, #345896 100%);
-    border: 1px rgba(101, 139, 188, 0.43) solid;
     border-radius: 40px/40px 40px 20px 20px;
     overflow: hidden;
     padding: 5px 20px;
     margin-bottom: 10px;
+    background-color: rgba(10,10,10,0.5);
+    box-shadow: inset rgba(0,0,0,0.8) 0px 1px 8px, rgba(255,255,255,0.1) 0px 0px 0px 1px, rgba(255,255,255,0.1) 0px 1px 0px;
 }
 .navigation-links {
     float: left;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .navigation-search {
     float: right;
 }
 .navigation-links li {
-    float: left;
-    margin: 0 10px; 
+    display: inline-block;
+    margin: 0 20px; 
+}
+.navigation-links li:first-child {
+    margin-left: 0;
 }
 .navigation-links li a {
-    color: #ffffff;
+    color: rgba(255,255,255,1);
+    text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
+    transition: color 0.15s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
-
+.navigation-links li a:hover {
+    color: #6ccee7;
+    text-shadow: 0px 0px 20px, rgba(0,0,0,0.6) 0px 1px 2px;
+}
+.navigation-links li i {
+    margin-right: 5px;
+    opacity: 0.6;
+}
 .navigation-search input {
     padding: 10px;
     background: #060912;
@@ -124,10 +146,10 @@ body {
 
 /* Promotion */
 .promotion {
-    border: 1px rgba(101, 139, 188, 0.43) solid;
-    border-radius: 18px;
-    background: linear-gradient(0deg, #0d1015 0%, #4d77b1 100%);
+        padding: 5px 20px;
     margin-bottom: 10px;
+    background-color: rgba(10,10,10,0.5);
+    box-shadow: inset rgba(0,0,0,0.8) 0px 1px 8px, rgba(255,255,255,0.1) 0px 0px 0px 1px, rgba(255,255,255,0.1) 0px 1px 0px;
     overflow: hidden;
 }
 .promotion ul li {
@@ -186,6 +208,8 @@ body {
 }
 .title-news h4 {
     font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: #000 0px -1px 0px;
 }
 .title-news i {
     margin-right: 10px;
@@ -401,9 +425,9 @@ body {
 .topwatch-image img {
     width: 40%;
     float: left;
+    margin-right: 13px;
 }
 .topwatch-image-content {
-    padding: 0 13px;
     overflow: hidden;
 }
 
@@ -418,6 +442,7 @@ body {
 }
 .topwatch-image {
     padding: 10px;
+    overflow: hidden;
 }
 
 .topwatch {
