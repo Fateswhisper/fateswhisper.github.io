@@ -83,15 +83,20 @@ body {
 }
 .logo-sponsor {
     float: right;
+    width: 20%;
+    text-align: center;
 }
 .logo-sponsor span {
     color: #6ccee7;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
 }
 .logo-sponsor p {
     margin-top: 20px;
     color: #ffffff;
+    text-align: center;
 }
 
 /* Navigation links */
@@ -593,6 +598,7 @@ body {
 }
 .footer > ul > li:first-child {
     border: none;
+    padding: 0;
 }
 .sub-menu i {
     margin-right: 10px;
@@ -653,18 +659,24 @@ body {
     color: #6ccee7;
 }
 
-/* Carousel */
-.owl-theme .owl-controls {
+/* Carousel 
+*/
+.owl-theme .owl-dots {
     background: linear-gradient(90deg, #0e1319 0%, #1c2431 50%, #12161f 100%);
     border-bottom: 1px #000000 solid;
     border-top: 1px #323e4e solid;
 }
 
-.owl-theme .owl-controls .owl-page span {
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px !Important;
+    height: 12px !Important;
+    opacity: 0.5;
     margin: 12px 7px !Important;
     background: linear-gradient(90deg, #0e1319 0%, #1c2431 50%, #12161f 100%) !Important;
     border: 2px #3bb8d8 solid !Important;
 }
-.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: linear-gradient(90deg, #0e1319 0%, #1c2431 50%, #12161f 100%) !Important;
+    opacity: 1;
 }

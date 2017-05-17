@@ -14,8 +14,9 @@
     <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/active.js"></script>
 
+    <link rel="stylesheet" href="js/carousel/animate.css">
     <link rel="stylesheet" href="js/carousel/owl.carousel.css">
-    <link rel="stylesheet" href="js/carousel/owl.theme.css">
+    <link rel="stylesheet" href="js/carousel/owl.theme.default.css">
     <script src="js/carousel/owl.carousel.js"></script>
 
 </head>
@@ -39,7 +40,12 @@
         </div>
         <div class="logo-sponsor">
             <span>//HEADSPONSOR</span>
-            <p>SENNHEISER</p>
+            <ul class="owl-sponsor owl-theme owl-carousel">
+                <li><img src="img/twitch.png"></li>
+                <li><img src="img/heroku.png"></li>
+                <li><img src="img/SpideyGaming.png"></li>
+                <li><img src="img/corsair.png"></li>
+            </ul>
         </div>
     </div>
     <div class="navigation wrapper">
@@ -66,9 +72,6 @@
             <li><i class="fa fa-eercast" aria-hidden="true"></i>STEELSERIES</li>
         </ul>
     </div>
-
-    <div class="wrapper qwe">
-
     <div class="hotnews wrapper">
         <div class="title-block">
             <div class="title-news">
@@ -353,7 +356,7 @@
                     </div>
                 </div>
             </div>
-            <div class="match owl-games owl-carousel">
+            <div class="match owl-games owl-theme owl-carousel">
                 <ul>
                     <li>
                         <div class="games">
@@ -524,7 +527,7 @@
                 <h4><span><i class="fa fa-arrow-right" aria-hidden="true"></i>RISK // </span>GALLERIES</h4>
             </div>
         </div>
-        <ul class="owl-img owl-carousel">
+        <ul class="owl-img owl-theme owl-carousel">
             <li class="item"><img src="img/owl1.jpg" alt="Owl Image"></li>
             <li class="item"><img src="img/owl2.jpg" alt="Owl Image"></li>
             <li class="item"><img src="img/owl3.jpg" alt="Owl Image"></li>
@@ -537,7 +540,7 @@
     </div>
     <div class="footer wrapper">
         <ul>
-            <li>LOGO
+            <li><img src="img/rog.png">
             </li>
             <li>
                 <h4>Information</h4>
@@ -603,24 +606,49 @@
             </ul>
         </div>
     </div>
-    </div>
     <script>
         $(document).ready(function ($) {
             $(".owl-img").owlCarousel({
-                items: 4,
-                itemsDesktop: [1199, 4],
-                itemsDesktopSmall: [979, 3]
+                loop: true, // сквозная прокрутка
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    400: {
+                        items: 2
+                    },
+                    700: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
             });
         });
         $(document).ready(function ($) {
             var owl = $(".owl-games");
 
             owl.owlCarousel({
-                items: 1, //1 items above 1000px browser width
-                itemsDesktop: [1000, 1], //1 items between 1000px and 901px
-                itemsDesktopSmall: [900, 1], // betweem 900px and 601px
-                itemsTablet: [600, 1], //1 items between 600 and 0
-                itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+                items: 1,
+                animateOut: 'bounceOutRight',
+                animateIn: 'bounceInLeft',
+                smartSpeed:450
+            });
+        });
+        $(document).ready(function ($) {
+            var owl = $(".owl-sponsor");
+
+            owl.owlCarousel({
+                items:1,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:2000,
+                dots: false,
+                autoplayHoverPause:true
             });
         });
     </script>
