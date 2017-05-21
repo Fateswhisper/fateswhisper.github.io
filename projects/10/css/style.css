@@ -151,7 +151,6 @@ body {
 
 /* Promotion */
 .promotion {
-        padding: 5px 20px;
     margin-bottom: 10px;
     background-color: rgba(10,10,10,0.5);
     box-shadow: inset rgba(0,0,0,0.8) 0px 1px 8px, rgba(255,255,255,0.1) 0px 0px 0px 1px, rgba(255,255,255,0.1) 0px 1px 0px;
@@ -300,7 +299,7 @@ body {
     float: left;
 }
 .mainarea ul {
-    margin: 0 10px 10px 10px;
+        margin: 0 10px 10px 0;
     overflow: hidden;
 }
 .mainarea ul li {
@@ -659,8 +658,8 @@ body {
     color: #6ccee7;
 }
 
-/* Carousel 
-*/
+
+/* Carousel */
 .owl-theme .owl-dots {
     background: linear-gradient(90deg, #0e1319 0%, #1c2431 50%, #12161f 100%);
     border-bottom: 1px #000000 solid;
@@ -679,4 +678,339 @@ body {
 .owl-theme .owl-dots .owl-dot:hover span {
     background: linear-gradient(90deg, #0e1319 0%, #1c2431 50%, #12161f 100%) !Important;
     opacity: 1;
+}
+
+
+
+/* Tabs */
+.command-content {
+    border: 1px rgba(101, 139, 188, 0.43) solid;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #08090d 0%, #1f2933 100%);
+    margin-bottom: 10px;
+}
+
+.tabs img {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tabs-command > .active {
+    color: #6ccee7;
+    text-shadow: 0px 0px 20px, rgba(0,0,0,0.6) 0px 1px 2px;
+    background: linear-gradient(90deg, #000000 0%, #1c2431 50%, #000000 100%);
+}
+.title-command img {
+    margin: 0 auto;
+}
+.tab-1.active ~ .command-1,
+.tab-2.active ~ .command-2,
+.tab-3.active ~ .command-3,
+.tab-4.active ~ .command-4,
+.tab-5.active ~ .command-5 {
+    display: inline-block;
+}
+
+.tabs {
+    text-align: center;
+    transition: 0.5s;
+    color: #ffffff;
+    padding: 10px 25px;
+    float: left;
+    cursor: pointer;
+    border-right: 1px solid hsla(0,0%,100%,.1);
+    width: 20%;
+    background: linear-gradient(90deg, #0e1319 0%, #1c2431 50%, #12161f 100%);
+}
+.tabs:hover {
+    color: #6ccee7;
+    background: linear-gradient(90deg, #000000 0%, #1c2431 50%, #000000 100%);
+}
+
+.commands {
+    padding: 12px 20px 24px 20px;
+    color: #ccc;
+    display: none;
+    width: 100%;
+}
+.tab-5 {
+    border-right: none;
+}
+
+
+.command-description {
+    width: 33.3%;
+    float: left;
+    font-size: 14px;
+}
+.command-player {
+    width: 66.6%;
+    display: inline-block;
+}
+.command-player li {
+    float: left;
+    width: calc(20% - 6px);
+    margin: 0 3px;
+}
+.command-player li a {
+    color: #ffffff;
+    transition: 0.3s;
+}
+.command-player li a:hover {
+    color: #6ccee7;
+}
+.command-player li img {
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.command-player li img:hover {
+    border: 2px #6ccee7 solid;
+}
+.command-player li p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title-command h4 {
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: #000 0px -1px 0px;
+    font-size: 32px;
+}
+.title-command span {
+    color: #6ccee7;
+}
+
+/* NEWS PAGE */
+.news-page ul li {
+    margin: 5px 0;
+    background: linear-gradient(0deg, #0f1219 0%, #262c3a 100%);
+    padding: 7px;
+    border: 1px rgba(101, 139, 188, 0.43) solid;
+    border-radius: 5px;
+}
+
+.news-page .line {
+    left: 0;
+    width: 100%;
+}
+.news-page .title-block {
+    padding: 10px 0;
+}
+.news-page .title-news {
+    margin: 0;
+}
+
+.news-page .autor {
+    float: left;
+    margin-left: 14px;
+}
+.news-page .comment {
+    float: right;
+    width: 56px;
+    text-align: center;
+    background: #4ebaf6;
+}
+.news-page .mainarea-image {
+    position: relative;
+    overflow: hidden;
+}
+.news-page .mainarea-image-content {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 9, 9, 0.47);
+    font-size: 13px;
+    line-height: 28px;
+}
+.news-page .mainarea-image-content a {
+    color: #ffffff;
+}
+.comment i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+
+/* Guides */
+.guides {
+    padding: 12px 20px 24px 20px;
+    border: 1px rgba(101, 139, 188, 0.43) solid;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(0deg, #08090d 0%, #1f2933 100%);
+    margin-bottom: 10px;
+}
+.guide-content {
+    position: relative;
+    overflow: hidden;
+    border: 1px rgba(101, 139, 188, 0.43) solid;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    background: linear-gradient(0deg, #08090d 0%, #1f2933 100%);
+}
+.guide-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+}
+.guide-img {
+    float: left;
+    width: 30%;
+    border-left: 10px #4ebaf6 solid;
+}
+.guide-list-1,
+.guide-list-2 {
+    color: #ccc;
+    float: left;
+    width: 50%;
+}
+.guide-list-1 a,
+.guide-list-2 a {
+    color: #ccc;
+    font-size: 14px;
+}
+.guide-content a:hover {
+    color: #6ccee7;
+    text-shadow: 0px 0px 20px, rgba(0,0,0,0.6) 0px 1px 2px;
+}
+.guide-list {
+    padding: 18px 19px;
+    width: 70%;
+    float: left;
+}
+.guide-list .title-block {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.guide-list .title-block h4 {
+    color: #6ccee7;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: #000 0px -1px 0px;
+}
+.guide-list .title-block i {
+    margin-right: 5px;
+}
+.guide-list-1 > li::before,
+.guide-list-2 > li::before {
+    display: inline-block;
+    content: "—";
+    width: 1em;
+}
+
+
+.guide-list-1 > li:hover:before,
+.guide-list-2 > li:hover:before {
+    color: #6ccee7;
+    text-shadow: 0px 0px 20px, rgba(0,0,0,0.6) 0px 1px 2px;
+}
+
+.guides-nav {
+    position: relative;
+    overflow: hidden;
+    border: 1px rgba(101, 139, 188, 0.43) solid;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    background: linear-gradient(0deg, #08090d 0%, #1f2933 100%);
+    text-align: center;
+}
+
+.guides-item {
+    cursor: pointer;
+    margin: 12px 20px 24px 20px;
+    float: left;
+    width: calc(20% - 40px);
+    position: relative;
+    /* transform: rotate(15deg); */
+    background: linear-gradient(0deg, #08090d 0%, #1f2933 100%);
+    opacity: 0.5;
+}
+.guides-item:hover {
+    opacity: 1;
+}
+.guides-item.active {
+    opacity: 1;
+}
+.guides-item span {
+    background: rgba(9, 9, 9, 0.47);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
+    text-transform: uppercase;
+    /*transform: rotate(-90deg);*/
+    color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 32px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+.guides-item:hover span {
+    color: #6ccee7;
+    text-shadow: 0px 0px 20px, rgba(0,0,0,0.6) 0px 1px 2px;
+    bottom: 40%;
+}
+
+.guides-item:hover img {
+    border: 2px #6ccee7 solid;
+}
+
+
+.guides-item img {
+    border: 2px solid transparent;
+    transition: 0.5s;
+    box-shadow: inset rgba(0,0,0,0.8) 0px 1px 8px, rgba(255,255,255,0.1) 0px 0px 0px 1px, rgba(255,255,255,0.1) 0px 1px 0px;
+}
+
+.guides-item.active img {
+    border: 2px #6ccee7 solid;
+}
+.guides-item.active span {
+    color: #6ccee7;
+    text-shadow: 0px 0px 20px, rgba(0,0,0,0.6) 0px 1px 2px;
+    bottom: 40%;
+}
+
+
+
+.game-1.active ~ .guid-dota,
+.game-2.active ~ .guid-cs,
+.game-3.active ~ .guid-lol,
+.game-4.active ~ .guid-hs,
+.game-5.active ~ .guid-wow {
+    display: inline-block;
+}
+
+.allguid {
+    display: none;
+}
+
+.allguid::before {
+    content: "";
+    height: 2px;
+    background: #6ccee7;
+    width: calc(100% + 40px);
+    display: block;
+    position: relative;
+    left: -20px;
+    right: -20px;
+    margin-bottom: 24px;
+}
+
+
+iframe {
+    width: 100%;
 }
